@@ -193,3 +193,19 @@ const addFactorVar = (val) =>{
 
 console.log(addFactorVar(15))
 
+function fibbonacci(count){
+    if (count === 1){
+        return [0]
+    }else if ( count === 2)
+        return [0,1]
+    else{
+        let sequence = [0,1]
+        for(i = 1; i < count-1; i++){
+            sequence.push(sequence[i]+sequence[i-1])
+
+        }
+        return sequence
+    }
+}
+
+console.log(fibbonacci(10));
